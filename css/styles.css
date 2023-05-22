@@ -40,11 +40,10 @@ a {
 }
 
 .container {
-  width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;
-  padding-right: 15px;
+  min-width: 320px;
+  max-width: 448px;
+  padding: 0 16px;
+  margin: 0 auto;
 }
 
 /*  */
@@ -420,8 +419,8 @@ a {
 .button-filter-control {
   padding: 12px 24px;
 
-  transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func), border-color var(--transition-dur-and-func),
-    box-shadow var(--transition-dur-and-func);
+  transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func),
+    border-color var(--transition-dur-and-func), box-shadow var(--transition-dur-and-func);
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -441,7 +440,8 @@ a {
   color: var(--white-txt-color);
   background-color: var(--active-color);
   border: 1px solid transparent;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* Project Card */
