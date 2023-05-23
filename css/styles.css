@@ -41,7 +41,7 @@ a {
 
 .container {
   min-width: 320px;
-  max-width: 448px;
+  max-width: 428px;
   padding: 0 16px;
   margin: 0 auto;
 }
@@ -607,8 +607,13 @@ a {
 
 /*  */
 .section {
-  padding-left: 24px;
-  padding: 120px 0;
+  padding: 96px 0;
+}
+
+@media screen and (min-width: 1128px) {
+  .section {
+    padding: 120px 0;
+  }
 }
 
 .list {
