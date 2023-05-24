@@ -99,6 +99,19 @@ a {
   margin-right: 76px;
 }
 
+@media screen and (min-width: 768px) {
+  .logo-link {
+    margin-right: 120px;
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .logo-link {
+    margin-right: 76px;
+  }
+}
+
 .logo-part {
   font-family: 'Raleway', sans-serif;
   line-height: 1.17;
@@ -164,6 +177,12 @@ a {
   gap: 40px;
 }
 
+@media screen and (max-width: 767px) {
+  .header-address-nav {
+    display: none;
+  }
+}
+
 .contact-limk-id {
   font-family: 'Roboto';
   font-style: normal;
@@ -193,6 +212,57 @@ a {
   padding-bottom: 188px;
   text-align: center;
   max-width: 1440px;
+}
+.main-section-main {
+  padding: 112px 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+
+  background-color: var(--dark-bg-color);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero_mob@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-width: 1158px) {
+  .main-section-main {
+    padding: 188px 0;
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .main-section-main {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero_bg/hero_mob@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 429px) {
+  .main-section-main {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero_bg/hero_tab@1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .main-section-main {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/hero_bg/hero_tab@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .main-section-main {
+    background-image: linear-gradient (rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero_bg/hero_desk@1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .main-section-main {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/hero_bg/hero_desk@2x.jpg);
+    }
+  }
 }
 
 .header-hero-one {
@@ -666,8 +736,25 @@ button {
 
 .header-nav-menu {
   display: flex;
-  align-items: center;
-  gap: 40px;
+  /* /* flex-direction: column; */
+  /* gap: 40px; */
+  gap: 12px;
+  /* font-style: normal; */
+}
+
+@media screen and (max-width: 767px) {
+  .header-nav-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .header-nav-menu {
+    display: flex;
+    flex-derection: row;
+    gap: 40px;
+    margin-top: 0;
+  }
 }
 
 .header-nav {
