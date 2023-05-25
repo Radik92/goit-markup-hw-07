@@ -66,11 +66,28 @@ a {
 }
 /* Navigation */
 .header-hero-header {
-  color: #434455;
-  background-color: #ffffff;
-  font-family: 'Roboto', sans-serif;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+
+  min-width: 320px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .page-nav {
+    width: 100%;
+  }
 }
 
 .header-hero-main {
